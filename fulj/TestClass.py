@@ -1,3 +1,5 @@
+import datetime as _datetime
+import json
 class ClassA(object):
     def __new__(cls):
         print(cls.__dict__)
@@ -23,3 +25,12 @@ class Employee(object):
     def __str__(self):
         return '{0}({1})'.format(self.__class__.__name__,self.__dict__)
 
+e = Employee("bob",1000)
+# print("0000000000000")
+print(hasattr(e,"name1"))
+print(isinstance(e,_datetime.datetime))
+json.JSONEncoder
+
+class PengineJsonEncoder(json.JSONEncoder):
+    def default(self, obj):
+        return super(PengineJsonEncoder, self).default(obj)
