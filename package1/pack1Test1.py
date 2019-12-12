@@ -1,0 +1,1 @@
+A = "hello i am a"
