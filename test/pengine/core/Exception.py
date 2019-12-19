@@ -35,3 +35,6 @@ class WorkFinished(Exception):
     def __init__(self, is_ok, message):
         self._is_ok = is_ok
         Exception.__init__(self,message)
+
+
+raise PipelineCanceException("stepmsg",error_code="4567890")
